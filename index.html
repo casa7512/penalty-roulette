@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17132e">
+  <title>돌려돌려! 벌칙 룰렛</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <main>
+    <header><a class="brand" href="./index.html">✳ <span>PARTY ROULETTE</span></a><span class="badge">오늘의 주인공은 누구?</span></header>
+    <section class="intro"><p class="eyebrow">GOOD FRIENDS, GREAT MEMORIES</p><h1>돌려돌려! <span>벌칙 룰렛</span><span class="spark" aria-hidden="true">✦</span></h1><p>고민은 그만, 운명에 맡겨봐요.<br class="mobile-break"> 우리 모임의 재미를 한 바퀴 더!</p></section>
+    <div class="layout">
+      <section class="game-card" aria-label="벌칙 룰렛">
+        <div class="card-top"><span><i class="live-dot"></i> LUCKY SPIN</span><span>8가지 벌칙 · 1개의 운명</span></div>
+        <div class="wheel-stage"><div class="pointer" aria-hidden="true"></div><div class="wheel-rim"><canvas id="wheel" width="900" height="900" role="img" aria-label="8칸 벌칙 룰렛. 오른쪽 목록에서 벌칙을 확인하고 수정할 수 있습니다."></canvas><div class="wheel-center" aria-hidden="true">✳<small>LET’S GO!</small></div></div><span class="orbit-star star-one" aria-hidden="true">✦</span><span class="orbit-star star-two" aria-hidden="true">✧</span></div>
+        <button id="spin" class="spin-button" type="button"><span aria-hidden="true">↻</span> 룰렛 돌리기 <span aria-hidden="true">→</span></button>
+        <p class="hint">모든 칸의 당첨 확률은 같아요. 행운을 빌어요! 🍀</p>
+        <div id="result" class="result" role="status" aria-live="polite" aria-atomic="true"><span class="result-icon" aria-hidden="true">🎯</span><div><p id="result-caption">오늘의 벌칙은?</p><strong id="result-text">버튼을 눌러 운명을 확인하세요</strong></div></div>
+      </section>
+      <section class="editor-card" aria-labelledby="editor-title"><div class="editor-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="editor-title">우리만의 벌칙 <span>✎</span></h2></div><span class="count">8칸</span></div><p class="editor-description">원하는 벌칙을 적어주세요.<br>수정한 내용은 룰렛에 바로 반영돼요.</p><div id="penalty-list" class="penalty-list"></div><div class="editor-footer"><span id="save-status" role="status">이 기기에 자동으로 저장돼요</span><button id="reset" type="button">기본값으로 ↺</button></div><div class="tip"><span aria-hidden="true">💡</span><p>즐거움은 함께, 벌칙은 가볍게!<br><strong>모두가 동의하는 벌칙으로 즐겨요.</strong></p></div></section>
+    </div><footer>조금의 긴장감, 한 바퀴의 즐거움. <span>MADE FOR YOUR PARTY ✦</span></footer>
+  </main><div id="confetti" aria-hidden="true"></div>
+</body>
+</html>
